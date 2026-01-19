@@ -4,4 +4,6 @@ HOST = "https://www.saucedemo.com"
 
 class Urls:
 
-    LOGIN_PAGE = "https://www.saucedemo.com/"
+    LOGIN_PAGE = f"{HOST}/"
+    PRODUCTS_TO_CART = f"{HOST}/inventory.html"
+    CART = f"{HOST}/cart.html"
