@@ -18,4 +18,4 @@ class BasePage(metaclass=MetaLocator):
 
     def is_opened(self):
         with allure.step(f"Opened {self._PAGE_URL}"):
-            self.wait.until(EC.url_to_be(self.PAGE_URL))
+            self.wait.until(EC.url_to_be(self._PAGE_URL))
