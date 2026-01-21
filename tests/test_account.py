@@ -26,3 +26,9 @@ class TestAccount(BaseTest):
     def test_delete_cart(self):
         self.delete_cart_products.is_opened()
         self.delete_cart_products.delete_cart_product()
+
+    @allure.story("next to checkout")
+    def test_next_to_checkout(self):
+        self.checkout.click_button_checkout()
+        self.checkout.is_opened()
+
