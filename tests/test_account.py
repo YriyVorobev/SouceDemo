@@ -1,5 +1,3 @@
-import faker
-
 from base.base_test import BaseTest
 from conftest import faker_ru
 from data.credentials import Credentials
@@ -40,5 +38,10 @@ class TestAccount(BaseTest):
         self.checkout_information.entering_a_name(faker_ru.first_name())
         self.checkout_information.entering_last_name(faker_ru.last_name())
         self.checkout_information.entering_zip_code(faker_ru.postcode())
+
+    @allure.story("next_continue")
+    def test_next_continue(self):
+        self.next_continue.submit_button_continue()
+        self.next_continue.is_opened()
 
 

@@ -4,6 +4,7 @@ from pages.products_to_cart.prodeucts_to_cart import ProductsToCart
 from pages.delete_cart_products.delete_cart_products import DeleteCartProduct
 from pages.checkout.checkout import Checkout
 from pages.checkout.checkout_information import CheckoutInformation
+from pages.next_continue.next_continue import NextContinue
 
 
 class BaseTest:
@@ -15,4 +16,5 @@ class BaseTest:
         self.delete_cart_products = DeleteCartProduct(self.driver)
         self.checkout = Checkout(self.driver)
         self.checkout_information = CheckoutInformation(self.driver)
+        self.next_continue = NextContinue(self.driver)
 

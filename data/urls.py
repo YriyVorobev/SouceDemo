@@ -8,3 +8,4 @@ class Urls:
     PRODUCTS_TO_CART = f"{HOST}/inventory.html"
     CART = f"{HOST}/cart.html"
     CHECKOUT = f"{HOST}/checkout-step-one.html"
+    CONTINUE = f"{HOST}/checkout-step-two.html"
